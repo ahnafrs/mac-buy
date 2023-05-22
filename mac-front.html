@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Macbook Pro</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div class="grid grid-cols-2">
+                <div class="p-20">
+                    <img src="images/mac.png" alt="">
+                </div>
+                <div class="">
+                    <h1 class="text-6xl font-bold">Customize Your Blue 24 inch iMac with apple M1 chip</h1>
+                    <h4 class="text-3xl pt-12">Apple M1 chip with 8-core CPU with 4 performance cores and 4 effeciency
+                        cores,
+                        7 core GPU, and 16 core nural engine 8GB unified memory 256GB SSD storage Two thunderbolt/USB 4
+                        ports Magic mouse Magic keyboard -US English</h4>
+
+                    <div class="pt-10">
+                        <h2 class="text-2xl font-bold">Memory</h2>
+                        <button id="memory-8gb" type="button"
+                            class="mt-4 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-500 hover:text-white">8GB
+                            Unified Memory</button>
+                        <button id="memory-16gb" type="button"
+                            class="mt-4 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-500 hover:text-white">16GB
+                            Unified Memory</button>
+                    </div>
+                    <div class="pt-10">
+                        <h2 class="text-2xl font-bold">Storage</h2>
+                        <button id="storage-256gb" type="button"
+                            class="mt-4 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-500 hover:text-white">256GB
+                            SSD Storage</button>
+                        <button id="storage-512gb" type="button"
+                            class="mt-4 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-500 hover:text-white">512GB
+                            SSD Storage</button>
+                        <button id="storage-1tb" type="button"
+                            class="mt-4 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-500 hover:text-white">1TB
+                            SSD Storage</button>
+                    </div>
+                    <div class="pt-10">
+                        <h2 class="text-2xl font-bold">Choose Your Delivery option</h2>
+                        <button id="delivery-free" type="button"
+                            class="mt-4 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-500 hover:text-white">Friday,Aug
+                            25 Free Prime Delivery</button>
+                        <button id="delivery-charge" type="button"
+                            class="mt-4 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-500 hover:text-white">Friday,Aug
+                            21 Delivery charge $20</button>
+                    </div>
+                    <div class="grid grid-cols-2 pt-20">
+
+                        <div>
+                            <div class="flex justify-between border-b pt-4">
+                                <div class="text-2xl font-bold ">Best Price</div>
+                                <div class="text-2xl font-bold">$1299</div>
+                            </div>
+                            <div class="flex justify-between border-b pt-4">
+                                <div class="text-2xl font-bold ">Extra Memory Cost</div>
+                                <div class="text-2xl font-bold">$<span id="extra-memory">0</span></div>
+                            </div>
+                            <div class="flex justify-between border-b pt-4">
+                                <div class="text-2xl font-bold ">Extra Storage Cost</div>
+                                <div class="text-2xl font-bold">$<span id="extra-storage">0</span></div>
+                            </div>
+                            <div class="flex justify-between border-b pt-4  border-black">
+                                <div class="text-2xl font-bold ">Delivery Charge</div>
+                                <div class="text-2xl font-bold">$<span id="delivery-charge-20">0</span></div>
+                            </div>
+                            <div class="flex justify-between border-b pt-4">
+                                <div class="text-2xl font-bold ">Total Price</div>
+                                <div class="text-2xl font-bold">$<span id="total">1299</span></div>
+                            </div>
+                            <div class="pt-20">
+                                <h1 class="text-2xl font-bold ">Add Promo Code</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center pb-3">
+                        <input class="border-2 p-2 border-gray-200" type="" name="" id="promo-kaku"
+                            placeholder="stevekaku" value="">
+                        <button on="" type="submit" onclick="applypromo()" class=""><span id="apply-promo"
+                                class=" bg-red-500 text-white p-2 rounded">Apply</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <hr size="30" class="mt-10">
+            <h1 class="text-5xl text-center font-extrabold p-10">Total $<span id="final-total">1299</span></h1>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
